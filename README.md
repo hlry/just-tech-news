@@ -8,6 +8,7 @@
 * [Sample](#Sample)
 * [Installation](#Installation)
 * [Usage](#Usage)
+* [Links](#Links)
 * [LICENSE](#LICENSE)
 * [CONTRIBUTING](#CONTRIBUTING)
 * [Questions](#Questions)
@@ -36,8 +37,12 @@ To install dependencies, run the following in your Command Line Interface (e.g.,
 Then run the following command:
 - node index
 
+## Links
+Deployed app:
+- Heroku: https://rocky-springs-51261.herokuapp.com/
+
 ## LICENSE
-This repository is licensed under the 'Apache License 2.0'.
+This repository is licensed under the Apache License 2.0.
 Refer to https://opensource.org/licenses/Apache-2.0 for complete license terms.
 
 ## CONTRIBUTING

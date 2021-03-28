@@ -29,9 +29,7 @@ Install mysql2.
 
 To install dependencies, run the following in your Command Line Interface (e.g., Terminal or Bash):
 - npm init
-- npm install bcrypt
-- npm install dotenv
-- npm install sequelize
+- npm install express sequelize mysql2 bcrypt dotenv
 
 ## Usage
 Then run the following command:

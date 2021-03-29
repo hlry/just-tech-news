@@ -2,23 +2,8 @@ const router = require('express').Router();
 const { Comment } = require('../../models');
 
 router.get('/', (req, res) => {
-    Comment.findAll({
-        attributes: [
-            'id',
-            'comment_text',
-            'user_id',
-            'post_id',
-            [sequelize.literal('(SELECT COUNT(*) FROM comment WHERE comment.id = comment.post_id)'), 'comment_count']
-        ],
-        order: [['created_at', 'DESC']],
-        include: [
-            {
-                model: User,
-                attributes: ['username']
-            }
-        ]
-    })
-        .then(dbPostData => res.json(dbPostData))
+    Comment.findAll()
+        .then(dbCommentData => res.json(dbCommentData))
         .catch(err => {
             console.log(err);
             res.status(500).json(err);

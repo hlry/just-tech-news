@@ -8,6 +8,7 @@ Comment.init(
         // define an id column
         id: {
             type: DataTypes.INTEGER,
+            allowNull: false,
             primaryKey: true,
             autoIncrement: true
         },
